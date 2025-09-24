@@ -41,7 +41,7 @@ getcountry('cairo')
 async function getcountry(city) {
 
 
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=4bf47be9079f428eb72183009251709&q=${city}&days=3&aqi=no&alerts=no`)
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=4bf47be9079f428eb72183009251709&q=${city}&days=3&aqi=no&alerts=no`)
 
     let data = await response.json()
 // console.log(data);
